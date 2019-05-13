@@ -1,0 +1,7 @@
+{
+  "name": "pwa-prototype",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

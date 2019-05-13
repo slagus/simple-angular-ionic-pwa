@@ -1,0 +1,46 @@
+
+.h-scroll{
+    white-space: nowrap;
+    overflow-x:scroll;
+    overflow-y:hidden;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .item{
+        display:inline-block;
+        margin:4px;
+    }
+    
+}
+
+.banner{
+    max-width:100%;
+}
+
+.channel{
+    ion-img{
+        width:70px;
+    }
+}
+
+.poster{
+    ion-img{
+        width:130px;
+    }
+}
+
+.dpad-focusable{
+    border:5px solid transparent;
+}
+.dpad-focusable:focus, .dpad-focusable:hover{
+   border:2px solid #f50;
+   padding:3px;
+   outline:none;
+}
+
+.dpad-focusable.clickdown{
+    border:5px solid #f50;
+    outline:none;
+    padding:0px;
+ }

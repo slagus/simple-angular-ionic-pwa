@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Movies App
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<!--
+
+  //Slider for banner optional
+
+  <ion-slides pager="true" autoplay="2000" loop="true" speed="2000">
+    <ion-slide *ngFor="let banner of banners" class="banner">
+      <div class="item">
+        <ion-img [src]="banner.src"></ion-img>
+      </div>
+    </ion-slide>
+  </ion-slides>
+-->
+
+  <div>
+    <div class="h-scroll">
+      <div class="item banner dpad-focusable" tabindex="0" *ngFor="let banner of banners">
+        <ion-img [src]="banner.src"></ion-img>
+      </div>
+    </div>
+  </div>
+
+
+  <ion-card>
+    <ion-card-header>
+      <ion-text>Tv Channels</ion-text>
+    </ion-card-header>
+    <div class="h-scroll">
+      <div class="item channel dpad-focusable" tabindex="0" *ngFor="let channel of tvChannels">
+        <ion-img [src]="channel.src"></ion-img>
+      </div>
+    </div>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-text>Tv Programs</ion-text>
+    </ion-card-header>
+     <div class="h-scroll">
+      <div class="item poster dpad-focusable" tabindex="0"  *ngFor="let poster of tvPosters">
+        <ion-img [src]="poster.src"></ion-img>
+      </div>
+    </div>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-text>Movies</ion-text>
+    </ion-card-header>
+    <ion-grid>
+      <ion-row>
+        <ion-col *ngFor="let movie of movies" size-xs="6" size-sm="3" size-md="3" size-lg="2" size-xl="1">
+          <div class="item movie dpad-focusable" tabindex="0">
+            <ion-img [src]="movie.src"></ion-img>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+</ion-content>
